@@ -1,8 +1,9 @@
 todo_list = []
 
 def add_task():
-    task = input("enter a new task: ")
-    todo_list.append(task)
+     task = input("enter a new task: ")
+    with open(todo_list.txt,"a")as f
+   f.write(task + "\n")
     print(f"task {task} added to the todo list.")
 
 def view_task():
